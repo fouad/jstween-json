@@ -1,0 +1,46 @@
+{
+  "id": "#box",
+
+  "steps": [
+              [
+                {
+                  "left": {
+                    "start": 0,
+                    "stop": 300,
+                    "time": 0,
+                    "units": "px",
+                    "duration": 1,
+                    "effect": "easeInOut"
+                  },
+                  "top": {
+                    "start": 0,
+                    "stop": 200,
+                    "time": 0,
+                    "units": "px",
+                    "duration": 1,
+                    "effect": "easeInOut"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "start": 300,
+                    "stop": 0,
+                    "time": 0,
+                    "units": "px",
+                    "duration": 1,
+                    "effect": "easeInOut"
+                  },
+                  "top": {
+                    "start": 200,
+                    "stop": 0,
+                    "time": 0,
+                    "units": "px",
+                    "duration": 1,
+                    "effect": "easeInOut"
+                  }
+                }
+              ]
+            ]
+}

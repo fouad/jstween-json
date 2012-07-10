@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>JSTween</title>
+  <style type="text/css">
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      position: absolute;
+      color: white;
+      text-align: center;
+      font-size: .6em;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<div id="box"></div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jstween-1.1.min.js"></script>
+<script type="text/javascript" src="jstween-json.js"></script>
+<script type="text/javascript">
+  var json = {
+  "id": "#box",
+
+  "steps": [
+              {
+                "left": {
+                  "start": 0,
+                  "stop": 300,
+                  "time": 0,
+                  "units": "px",
+                  "duration": 1,
+                  "effect": "easeInOut"
+                },
+                "top": {
+                  "start": 0,
+                  "stop": 200,
+                  "time": 0,
+                  "units": "px",
+                  "duration": 1,
+                  "effect": "easeInOut"
+                }
+              },
+              {
+                "left": {
+                  "start": 300,
+                  "stop": 0,
+                  "time": 0,
+                  "units": "px",
+                  "duration": 1,
+                  "effect": "easeInOut"
+                },
+                "top": {
+                  "start": 200,
+                  "stop": 0,
+                  "time": 0,
+                  "units": "px",
+                  "duration": 1,
+                  "effect": "easeInOut"
+                }
+              }
+            ]
+}
+  var box = new TweenJSON(json);
+  box.play();
+</script>
+</body>
+</html>
